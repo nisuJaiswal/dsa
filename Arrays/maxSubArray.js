@@ -1,4 +1,4 @@
-const array = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+const array = [1, -2, 3, -3, 5, -6];
 
 const maxSumSubArray = (arr) => {
   let tempSum = 0;
