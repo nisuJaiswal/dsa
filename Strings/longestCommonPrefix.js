@@ -12,4 +12,4 @@ const longestPrefix = (str) => {
 
   return prefix;
 };
-console.log(longestPrefix(["flower", "flow", "flight"]));
+console.log(longestPrefix(["flower", "flow", "flowers"]));
