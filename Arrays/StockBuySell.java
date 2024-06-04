@@ -6,6 +6,8 @@ public class StockBuySell {
         int maxProfit = 0;
 
         for (int i = 1; i < prices.length; i++) {
+
+            // Find the minimum buy value from current index and buyVal
             if (buyVal > prices[i])
                 buyVal = prices[i];
 
