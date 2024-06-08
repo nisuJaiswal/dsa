@@ -1,4 +1,3 @@
-package Strings;
 
 public class Palindrome {
     public static boolean checkPalindrrome(String str) {
