@@ -3,6 +3,8 @@ package Trees;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import javax.swing.plaf.metal.MetalIconFactory.TreeFolderIcon;
+
 public class BinaryTree {
     // Static class for Node
     static class Node {
@@ -104,6 +106,70 @@ public class BinaryTree {
         return leftCount + rightCount + 1;
     }
 
+    // Print sum of all nodes
+    public static int sumNodes(Node root) {
+        if (root == null)
+            return 0;
+
+        int leftSum = sumNodes(root.left);
+        int rightSum = sumNodes(root.right);
+
+        return leftSum + rightSum + root.data;
+    }
+
+    // Calculate height of tree
+    public static int calculateHeight(Node root) {
+        if (root == null)
+            return 0;
+
+        int leftHeight = calculateHeight(root.left);
+        int rightHeight = calculateHeight(root.right);
+
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    static class TreeInformation {
+        int height;
+        int diameter;
+
+        TreeInformation(int height, int diameter) {
+            this.height = height;
+            this.diameter = diameter;
+        }
+    }
+
+    // Efficient Implementation
+    public static TreeInformation efficientDiameter(Node root) {
+
+        if (root == null) {
+            return new TreeInformation(0, 0);
+        }
+        TreeInformation left = efficientDiameter(root.left);
+        TreeInformation right = efficientDiameter(root.right);
+
+        int thisHeight = Math.max(left.height, right.height) + 1;
+
+        int diaLeft = left.diameter;
+        int diaRight = right.diameter;
+        int diaMid = left.height + right.height + 1;
+
+        int thisDiam = Math.max(Math.max(diaLeft, diaRight), diaMid);
+
+        TreeInformation myInfo = new TreeInformation(thisHeight, thisDiam);
+        return myInfo;
+    }
+
+    // Diameter of Tree
+    public static int maxDiameter(Node root) {
+        if (root == null)
+            return 0;
+        int leftMax = maxDiameter(root.left);
+        int rightMax = maxDiameter(root.right);
+        int alongRoot = calculateHeight(root.left) + calculateHeight(root.right) + 1;
+
+        return Math.max(Math.max(leftMax, rightMax), alongRoot);
+    }
+
     // Driver Code
     public static void main(String[] args) {
         System.out.println();
@@ -113,7 +179,7 @@ public class BinaryTree {
         // System.out.println(root.data);
         // levelOrder(root);
 
-        int nodes = countNode(root);
+        int nodes = maxDiameter(root);
         System.out.println(nodes);
     }
 }
