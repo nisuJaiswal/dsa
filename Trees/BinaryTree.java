@@ -3,8 +3,6 @@ package Trees;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import javax.swing.plaf.metal.MetalIconFactory.TreeFolderIcon;
-
 public class BinaryTree {
     // Static class for Node
     static class Node {
