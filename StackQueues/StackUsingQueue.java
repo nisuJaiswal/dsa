@@ -1,4 +1,8 @@
-public class StackUsingQueue {
+package StackQueues;
+
+import java.util.*;
+
+class StackUsingQueue {
     class MyStack {
         Queue<Integer> queue = new LinkedList<>();
 
