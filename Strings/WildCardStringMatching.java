@@ -3,6 +3,7 @@ public class WildCardStringMatching {
 
         // i for string and j for pattern index
         int i = 0, j = 0;
+
         // start points the index of start found in pattern while matchedStar gives
         // index in given string
         int starIndex = -1, matchedStar = -1;
