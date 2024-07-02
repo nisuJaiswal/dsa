@@ -34,6 +34,7 @@ public class DistanceOfNearestCell {
                 }
             }
         }
+
         // UP. DOWN, LEFT, RIGHT
         int[] dRow = { -1, 1, 0, 0 };
         int[] dCol = { 0, 0, 1, -1 };
