@@ -1,4 +1,3 @@
-package Arrays;
 
 public class FindMinInRotated {
     public static int findMin(int[] arr) {

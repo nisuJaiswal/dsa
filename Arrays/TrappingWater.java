@@ -1,4 +1,3 @@
-package Arrays;
 
 public class TrappingWater {
     public static int findWater(int[] arr) {

@@ -1,4 +1,3 @@
-package Arrays;
 
 public class HIndex {
     public static int giveHIndex(int[] arr) {

@@ -1,4 +1,3 @@
-package Arrays;
 
 public class FindSuminRotated {
     public static boolean getResult(int[] arr, int x) {

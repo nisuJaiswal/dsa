@@ -1,4 +1,3 @@
-package Arrays;
 
 public class MinNumberMergeForPalindrome {
     public static int numberOfOperations(int[] arr) {

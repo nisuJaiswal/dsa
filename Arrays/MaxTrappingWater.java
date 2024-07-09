@@ -1,4 +1,3 @@
-package Arrays;
 
 public class MaxTrappingWater {
     public static int getMaxWater(int height[]) {

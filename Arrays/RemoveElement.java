@@ -1,4 +1,3 @@
-package Arrays;
 
 public class RemoveElement {
     public static int removeElement(int[] nums, int k) {

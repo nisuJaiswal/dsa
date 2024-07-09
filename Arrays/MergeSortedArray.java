@@ -1,4 +1,3 @@
-package Arrays;
 
 public class MergeSortedArray {
     public static void mergeArrays(int[] nums1, int m, int[] nums2, int n) {

@@ -1,4 +1,3 @@
-package Arrays;
 
 public class RepeatAndMissingNumber {
     public static int[] findRepeated(final int[] A) {

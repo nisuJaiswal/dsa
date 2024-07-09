@@ -1,4 +1,3 @@
-package Arrays;
 
 class MinMaxArray {
     public static int getMin(int arr[]) {

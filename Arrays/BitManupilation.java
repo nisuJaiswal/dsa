@@ -1,4 +1,3 @@
-package Arrays;
 
 public class BitManupilation {
     public static void usingSimpleApproach(int a, int b) {

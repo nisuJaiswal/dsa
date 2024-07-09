@@ -1,4 +1,3 @@
-package Arrays;
 
 public class PlusOne {
     public static int[] plusOne(int[] arr) {

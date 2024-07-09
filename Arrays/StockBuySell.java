@@ -1,4 +1,3 @@
-package Arrays;
 
 public class StockBuySell {
     public static int predictBuy(int[] prices) {
