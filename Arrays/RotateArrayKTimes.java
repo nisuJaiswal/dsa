@@ -13,6 +13,7 @@ public class RotateArrayKTimes {
         int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
         int n = nums.length;
         int k = 3;
+        k %= n;
         reverseArr(nums, 0, n - k - 1);
         reverseArr(nums, n - k, n - 1);
         reverseArr(nums, 0, n - 1);
