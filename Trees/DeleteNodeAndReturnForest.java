@@ -27,7 +27,4 @@ public class DeleteNodeAndReturnForest {
         return res;
     }
 
-    public static void main(String[] args) {
-
-    }
 }
