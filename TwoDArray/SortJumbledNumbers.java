@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class SortJumbledNumbers {
-    public int[] sortJumbledNumber(int[] mapping, int[] nums) {
+    public static int[] sortJumbledNumber(int[] mapping, int[] nums) {
         int res[] = new int[nums.length];
 
         int[][] map = new int[nums.length][2];
@@ -35,6 +35,13 @@ public class SortJumbledNumbers {
     }
 
     public static void main(String[] ar) {
+        int[] mappings = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+        int[] nums = { 123, 456, 999, 100 };
+
+        int[] res = sortJumbledNumber(mappings, nums);
+
+        System.out.print(Arrays.toString(res));
 
     }
 }
