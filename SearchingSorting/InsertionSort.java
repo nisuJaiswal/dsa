@@ -6,13 +6,13 @@ public class InsertionSort {
 
         for (int i = 1; i < n; i++) {
             int curr = arr[i];
+
             int j = i - 1;
 
-            while (j >= 0 && curr < arr[j]) {
+            while (j >= 0 && arr[j] > curr) {
                 arr[j + 1] = arr[j];
                 j--;
             }
-
             arr[++j] = curr;
         }
     }
